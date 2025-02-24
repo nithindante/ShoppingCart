@@ -1,0 +1,13 @@
+<div class="mainGrid">
+    <div *ngFor="let item of itemsArr;let i = index" class="grid">
+        <div class="grids">
+            <div> {{item.title}} </div>
+            <img src="{{item.image}}" class="images">
+            <form class="innerGridDiv" (ngSubmit)="submit(itemsForm,item)" #itemsForm="ngForm">
+                <div>${{item.price}}</div>
+                <input type="number" ngModel name="quantity" required min="1">
+                <input type="submit" value="Add to Cart" [disabled]="!itemsForm.form.valid">
+            </form>
+        </div>
+    </div>
+</div>

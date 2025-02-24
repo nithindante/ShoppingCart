@@ -1,0 +1,19 @@
+<nav *ngIf="showNavbar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid headerDiv">
+        <a class="navbar-brand" href="#">FakeStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse innerDiv" id="navbarNavAltMarkup">
+            <a class="nav-link active" aria-current="page" href="#" [routerLink]="['/']"
+                routerLinkActive="router-link-active">Home</a>
+            <a class="nav-link" href="#" routerLink='shoppingpage'>Shop</a>
+            <i class="bi bi-cart2" routerLink="cart"></i>
+            <div class="circular-number" routerLink="cart">
+                <div *ngIf="numbers">{{numbers}}</div>
+            </div>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

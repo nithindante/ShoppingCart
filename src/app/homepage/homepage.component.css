@@ -1,0 +1,17 @@
+
+
+.mainDiv{
+    background: url('/wallpaper1.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+:host{
+    /* display: grid;
+    height: 90vh; */
+}

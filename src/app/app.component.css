@@ -1,0 +1,49 @@
+:host{
+    display: grid;
+    grid-template-rows: 0.05fr 0fr 1fr;
+    height: 100vh;
+}
+
+
+header{
+    display: flex;
+}
+
+.headerDiv{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+
+.navDiv{
+
+}
+
+.innerDiv{
+    display: grid !important;
+    grid-template-columns: 0.1fr 0.1fr 0.05fr 0.1fr;
+    justify-content: flex-end;
+}
+
+.mainDiv{
+    background: url('/wallpaper1.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.circular-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    color: #333;
+  }
